@@ -1,0 +1,11 @@
+<div style="clear:both">
+    <ul class="list-group">
+    <li class="list-group-item" ng-repeat="item in found">
+    <div class="row">
+    <div class="col-xs-10"><strong>{{item.name}}, {{item.short_name}}</strong>, <i>{{item.description}}</i></div> 
+    <div class="col-xs-2"><button class="btn btn-danger" ng-click="delete({item:item})">Don't want this one !</button></div>
+    </div>
+    </li>
+    </ul>
+    <div class="alert alert-danger" ng-if="isEmpty==1"><strong>Nothing found !</strong></div>
+</div>
